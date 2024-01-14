@@ -6,7 +6,7 @@ _G.Fuse = "Fuse Bomb"
 _G.Laser = "Laser Gun"
 _G.Hyper = "Hyper Laser"
 _G.Fingers = "Laser Fingers"
-_G.Chartreuse = "Chartreuse Periastron (500 Wins)"
+_G.Chartreuse = "Chartreuse Periastron"
 
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local SaveManager = loadstring(game:HttpGet("https://github.com/rscript-O0607O/-4-4SH4-X0CP-9-QvzU9Vp-u-XtO7pKRxr-A-ggh-caVYh/raw/main/loader/scripts/main/config.lua"))()
