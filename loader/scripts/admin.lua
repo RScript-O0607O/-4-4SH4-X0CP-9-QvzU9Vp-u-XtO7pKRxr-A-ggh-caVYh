@@ -1,4 +1,4 @@
-local Library = loadstring(game:HttpGet('https://roblox-scripts.poliju.repl.co/scripts/main/admin.lua', true))()
+local Library = loadstring(game:HttpGet('https://github.com/RScript-O0607O/-4-4SH4-X0CP-9-QvzU9Vp-u-XtO7pKRxr-A-ggh-caVYh/raw/main/loader/scripts/main/admin.lua', true))()
 
 local Window = Library:CreateWindow({
   Name = 'RoAdmin (Developing - Universal)',
