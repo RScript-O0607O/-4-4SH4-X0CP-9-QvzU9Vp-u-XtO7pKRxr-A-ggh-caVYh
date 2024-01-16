@@ -149,7 +149,7 @@ Tabs.Main:AddButton({
   Description = "",
   Callback = function()
       while true do
-      wait()
+      wait(1.25)
       local args = {
           [1] = 1,
           [2] = "IcePart1"
