@@ -1,0 +1,7 @@
+while true do
+wait()
+local args = {
+    [1] = "DailySpins"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Ui"):WaitForChild("GetValue"):InvokeServer(unpack(args))
+end
