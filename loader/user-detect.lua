@@ -73,12 +73,6 @@ task.spawn(function()
 end)
 pcall(function() getgenv().RoScript_Loaded = false end)
 local Fluent = loadstring(game:HttpGet('https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua'))()
-Fluent:Notify({
-    Title = 'RoScript V5',
-    Content = 'Loading RoScript V5... | Please wait!',
-    Duration = 8
-})
-wait(8.5)
 if game.Players.LocalPlayer.UserId == nil then
     Fluent:Notify({
         Title = 'RoScript V5',
