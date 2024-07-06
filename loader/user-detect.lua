@@ -1,4 +1,3 @@
-shared.RoAdmin = true
 if RoScript_Loaded == true then
     warn("Error: RoScript V5 already loaded!")
     warn("Wait 5 seconds before executing again!")
@@ -36,16 +35,10 @@ if writefile and isfile then
 end
 task.spawn(function()
     if isfile and isfile('discord.json') then
-        local requesttype
-        if identifyexecutor() == 'Synapse X' then
-            requesttype = syn.request
-        else
-            requesttype = http_request
-        end
         local http = game:GetService('HttpService')
         local file = http:JSONDecode(readfile('discord.json'))
         if file.Discord_Invite_On_Execution == true then
-            requesttype({
+            req({
                 Url = 'http://127.0.0.1:6463/rpc?v=1',
                 Method = 'POST',
                 Headers = {
