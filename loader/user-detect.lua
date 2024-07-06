@@ -1,15 +1,11 @@
+shared.RoAdmin = true
 if RoScript_Loaded == true then
     warn("Error: RoScript V5 already loaded!")
     warn("Wait 5 seconds before executing again!")
     return
 end
 pcall(function() getgenv().RoScript_Loaded = true end)
-local req
-if identifyexecutor() == "Synapse X" then
-    req = syn.request
-else
-    req = http_request
-end
+local req = http_request
 local data = {
     ['content'] = '',
     ['embeds'] = {
@@ -86,7 +82,7 @@ local supportedPlaceIds = {
     7952502098, 1240123653, 1632210982, 12398414727, 14469379009, 11970456, 2537430692, 13924946576, 8705534359, 5059952999, 
     11756661207, 10679961467, 11727501024, 11103424163, 12081110790, 12081166311, 14427937850, 206640076, 9961650006, 3851622790, 4620170611, 20321167
 }
-if table.find(supportedPlaceIds, game.PlaceId) then
+if shared.RoAdmin then loadstring(game:HttpGet("https://github.com/RScript-O0607O/-4-4SH4-X0CP-9-QvzU9Vp-u-XtO7pKRxr-A-ggh-caVYh/raw/main/loader/scripts/admin.lua"))() elseif table.find(supportedPlaceIds, game.PlaceId) then
     loadstring(game:HttpGet('https://github.com/RScript-O0607O/-4-4SH4-X0CP-9-QvzU9Vp-u-XtO7pKRxr-A-ggh-caVYh/raw/main/loader/scripts/id/'..game.PlaceId..'.lua'))()
 else
     loadstring(game:HttpGet('https://github.com/RScript-O0607O/-4-4SH4-X0CP-9-QvzU9Vp-u-XtO7pKRxr-A-ggh-caVYh/raw/main/loader/scripts/unsupported.lua'))()
